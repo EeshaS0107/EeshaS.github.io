@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photo Gallery</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    .photo {
+      height: 200px;
+      width : 600px;
+    }
+
+ .zoom img {
+  transition: transform .2s; /* Animation */
+  width: 600px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover img {
+  transform: scale(-0.5, 1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  
+  .col-sm-3 {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 16px;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .col-sm-3 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 577px) and (max-width: 768px) {
+    .col-sm-3 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 992px) {
+    .col-sm-3 {
+      flex: 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    .col-sm-3 {
+      flex: 25%;
+      max-width: 25%;
+    }
+  }
+
+    /* .image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+@media (max-width: 992px) {
+  .image-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+
+
+  </style>
+</head>
+<body>
+  <div class="zoom">
+  <div class="container-fluid">
+    <h1 class="text-center my-4">My Photo Gallery</h1>
+   
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="sky1.jpg" class="img-fluid photo" alt="Photo 1">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky2.jpeg" class="img-fluid photo" alt="Photo 2">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky3.webp" class="img-fluid photo" alt="Photo 3">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky4.jpeg" class="img-fluid photo" alt="Photo 4">
+      </div>
+      
+    </div>
+    <br>
+    
+
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="sky5.webp" class="img-fluid photo" alt="Photo 1">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky6.jpeg" class="img-fluid photo" alt="Photo 2">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky7.webp" class="img-fluid photo" alt="Photo 3">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky8.jpg" class="img-fluid photo" alt="Photo 4">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="sky9.webp" class="img-fluid photo" alt="Photo 1">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky10.jpg" class="img-fluid photo" alt="Photo 2">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky11.jpg" class="img-fluid photo" alt="Photo 3">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky12.jpeg" class="img-fluid photo" alt="Photo 4">
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-3">
+        <img src="sky13.jpg" class="img-fluid photo" alt="Photo 1">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky14.jpg" class="img-fluid photo" alt="Photo 2">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky15.jpg" class="img-fluid photo" alt="Photo 3">
+      </div>
+      <div class="col-sm-3">
+        <img src="sky1.jpg" class="img-fluid photo" alt="Photo 4">
+      </div>
+    </div>
+    <br>
+    
+  </div>
+</div>
+  
+  <!-- Include Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
